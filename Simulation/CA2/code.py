@@ -30,4 +30,5 @@ env = simpy.Environment()
 bcs = simpy.Resource(env, capacity=2)
 for i in range(4):
 	car = Car(env, bcs, i, 2*i, 5)
+
 env.run()
